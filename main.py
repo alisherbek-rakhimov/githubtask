@@ -53,6 +53,7 @@ for author, dates_commit_count in authors.items():
         else:
             filtered_authors[author][date] = 0
 
+# Plotting the collected data
 plot_data = defaultdict(list)
 for author, dates_commit_count in filtered_authors.items():
     for _, commit_count in dates_commit_count.items():
