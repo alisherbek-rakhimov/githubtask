@@ -8,10 +8,10 @@ from github.Commit import Commit
 from github.Repository import Repository
 
 # First create a Github instance:
-# Не стал хранить
-g = Github("119ca1a0accc3f93a239a6d3d068cdb5c4457905 ")
+g = Github()
 
 repo: Repository = g.get_repo("tiangolo/fastapi")
+# repo: Repository = g.get_repo("facebook/react")
 
 # getting the date which is 31 days before last commit date
 commits = repo.get_commits()
@@ -36,6 +36,9 @@ for commit in commits:
             authors[author][date] = 1
     else:
         authors[author][date] = 1
+
+# for author, dates in authors.items():
+#     print(author, ":", dates)
 
 # filling dates list with whole month dates for plotting purposes
 dates = []
