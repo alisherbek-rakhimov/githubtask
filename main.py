@@ -9,10 +9,9 @@ from github.Repository import Repository
 
 # First create a Github instance:
 # Не стал хранить
-PERSONAL_ACCESS_TOKEN = "4081c3c51c5e3d2304ee675fe44f394f70e2546d"
-g = Github(PERSONAL_ACCESS_TOKEN)
+g = Github("119ca1a0accc3f93a239a6d3d068cdb5c4457905 ")
 
-repo: Repository = g.get_repo("facebook/react")
+repo: Repository = g.get_repo("tiangolo/fastapi")
 
 # getting the date which is 31 days before last commit date
 commits = repo.get_commits()

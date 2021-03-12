@@ -6,7 +6,7 @@ Please activate venv and install all requirements before running `main.py`. I ke
 main.py instead of using .env I hope for test-task purposes this is enough
 
 **FastAPI**
-![plot](./fastapi_sample.png)
+![plot](./fastapi.png)
 
 **ReactJS**
-![plot](./reactjs_sample.png)
+![plot](./reactjs.png)
